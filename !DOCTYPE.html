@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nimuae Lexine Carino - Portfolio</title>
+  
+  <!-- 1. GOOGLE FONTS EMBED LINKS ADDED HERE -->
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: #fcfbf7;
+      color: #2c2523;
+      /* 2. UPDATED BODY FONT TO OPEN SANS WITH WEB-SAFE FALLBACKS */
+      font-family: 'Open Sans', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      padding: 4rem 2rem;
+    }
+
+    main {
+      max-width: 650px;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 4rem;
+    }
+
+    /* New Transparent Box Container */
+    .content-box {
+      background-color: rgba(255, 255, 255, 0.4); /* White with 40% transparency */
+      border: 1px solid rgba(164, 52, 37, 0.2);
+      padding: 2rem;
+      border-radius: 8px;
+    }
+
+    /* Typography styling */
+    /* 3. UPDATED HEADINGS TO MONTSERRAT WITH WEB-SAFE FALLBACKS */
+    h1, h2 {
+      font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+      color: #1a1514;
+    }
+
+    .hero-title {
+      font-size: 2.4rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-style: italic;
+      color: #706561;
+      margin-bottom: 0; /* Removed margin since it's at the bottom of the box */
+    }
+
+    p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Remove bottom margin from the last element inside boxes */
+    .content-box *:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Profile Photo Styling */
+    .profile-photo {
+      width: 200px;               /* Adjust size as needed */
+      height: 200px;
+      object-fit: cover;          /* Prevents image stretching */
+      border-radius: 50%;         /* Makes the photo a circle */
+      margin-bottom: 1.5rem;
+      border: 3px solid #e0dad0;  /* Subtle frame border */
+    }
+
+    /* Lists */
+    ul {
+      list-style-type: none; /* Removes messy default bullets */
+      padding-left: 0;
+    }
+
+    li {
+      font-size: 1.05rem;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eeebe3; /* Subtle dividing lines */
+    }
+
+    /* Images */
+    .image-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      display: block;
+      border-radius: 4px; /* Slight softening on edges */
+    }
+
+    /* Footer & Links */
+    footer {
+      margin-top: 6rem;
+    }
+
+    a {
+      color: #a43425; /* Elegant accent color for your links */
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    a:hover {
+      border-bottom-color: #a43425;
+    }
+
+    /* 4. RESPONSIVE BREAKPOINTS FOR OPTIMAL READABILITY CHANNELS */
+    /* Tablet Portrait Breakpoint */
+    @media (max-width: 768px) {
+      body {
+        padding: 3rem 1.5rem;
+      }
+      .hero-title {
+        font-size: 2rem;
+      }
+      h1, h2 {
+        font-size: 1.6rem;
+      }
+    }
+
+    /* Mobile Breakpoint */
+    @media (max-width: 480px) {
+      body {
+        padding: 2rem 1rem;
+        font-size: 15px; /* Scales down body text scale for small screens */
+      }
+      .hero-title {
+        font-size: 1.75rem;
+      }
+      h1, h2 {
+        font-size: 1.4rem;
+      }
+      .content-box {
+        padding: 1.5rem; /* Narrower padding inside the glass boxes */
+      }
+      .profile-photo {
+        width: 150px; /* Slightly scaled down avatar to fit gracefully */
+        height: 150px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main>
+    <!-- Header / Hero Section -->
+    <section>
+      <div class="content-box">
+        <img src="Nimuae.jfif" alt="Nimuae Lexine Carino" class="profile-photo">
+        <h1 class="hero-title">Hello, I'm Nimuae Lexine Carino</h1>
+        <p class="subtitle">“Life is a state of nostalgia — we live in the present and by our past.”</p>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section>
+      <div class="content-box">
+        <h2>About Me</h2>
+        <p>I am a sophomore-standing student from UP - OU taking up a Bachelor of Arts in Multimedia Studies.</p>
+        <p>While studying, I do freelance tutoring for Chinese students who wish to hone their English speaking skills.</p>
+      </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section>
+      <div class="content-box">
+        <h2>Fun Facts about me!</h2>
+        <ul>
+          <li>Watching live gigs</li>
+          <li>Seeing new movies</li>
+          <li>Self Dates</li>
+          <li>Saladstop + Jamba Juice combo</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Passion Project Section -->
+    <section>
+      <div class="content-box">
+        <h2>Passion Project</h2>
+        <p>One of my passion projects is creating publicity materials or digital collages for my Instagram posts.</p>
+        <div class="image-grid">
+          <img src="dump.png" alt="dump part 1">
+          <img src="dump (1).png" alt="dump part 2">
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Connection -->
+    <footer>
+      <div class="content-box">
+        <h2>Let's be friends!</h2>
+        <p>Instagram: <a href="https://instagram.com" target="_blank" rel="noopener">@nine_lexine</a></p>
+      </div>
+    </footer>
+  </main>
+
+</body>
+</html>
